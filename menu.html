@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Nebula Knife</title>
+    <meta name="description" content="Explore the Nebula Knife menu featuring cosmic culinary creations crafted with precision and artistry.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Nebula Knife</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header page-header--banner" style="--banner-img: url('public/images/menu-banner.jpg')">
+            <h1>Menu</h1>
+            <p>A space-fusion lineup built with precision and bold flavor.</p>
+        </div>
+
+        <section class="menu-intro">
+            <p>Explore signature plates and seasonal favorites designed for balance, texture, and impact. Whether you want a full dinner or a few plates to share, this menu is built to travel.</p>
+        </section>
+
+        <section class="menu-search-section">
+            <div class="menu-search-wrapper">
+                <div class="search-controls">
+                    <label for="menu-search" class="visually-hidden">Search the menu</label>
+                    <select id="menu-category-filter" class="menu-category-select" aria-label="Filter by category">
+                        <option value="">All Categories</option>
+                        <option value="small-plates">Small Plates</option>
+                        <option value="mains">Mains</option>
+                        <option value="desserts">Desserts</option>
+                        <option value="drinks">Drinks</option>
+                    </select>
+                    <div class="search-input-group">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg"
+                         width="18" height="18" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                    <input
+                        type="search"
+                        id="menu-search"
+                        class="menu-search-input"
+                        placeholder="Search dishes, drinks, ingredients..."
+                        aria-label="Search the menu"
+                        autocomplete="off"
+                    >
+                    <button class="search-clear" id="search-clear" aria-label="Clear search" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                             fill="none" stroke="currentColor" stroke-width="2.5"
+                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <line x1="18" y1="6" x2="6" y2="18"/>
+                            <line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+                <p class="search-empty" id="search-empty" aria-live="polite" hidden>
+                    No results for "<span id="search-empty-term"></span>" - try another search.
+                </p>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="menu-category" data-category="small-plates">
+                <div class="menu-category-header">
+                    <h3>Small Plates</h3>
+                    <p>Light bites to start your journey.</p>
+                </div>
+                <div class="menu-category-image">
+                    <img src="img/starter.PNG" alt="Small plates at Nebula & Knife">
+                </div>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Nebula Dust Scallops</span>
+                            <span class="menu-item-price">$18</span>
+                        </div>
+                        <p class="menu-item-desc">Seared scallops with bright citrus foam and a finishing stardust seasoning.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Lunar Garden Salad</span>
+                            <span class="menu-item-price">$14</span>
+                        </div>
+                        <p class="menu-item-desc">Greens, edible flowers, and lemon miso dressing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" data-category="mains">
+                <div class="menu-category-header">
+                    <h3>Mains</h3>
+                    <p>Bold centerpieces built for impact.</p>
+                </div>
+                <div class="menu-category-image">
+                    <img src="img/main.PNG" alt="Main courses at Nebula & Knife">
+                </div>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Comet Tail Steak</span>
+                            <span class="menu-item-price">$34</span>
+                        </div>
+                        <p class="menu-item-desc">Pepper-crusted sirloin served with smoked butter and roasted roots.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Orbit Ramen</span>
+                            <span class="menu-item-price">$22</span>
+                        </div>
+                        <p class="menu-item-desc">Rich broth, noodles, soft egg, and chili oil "solar flare."</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Meteor Mushroom Bowl</span>
+                            <span class="menu-item-price">$20</span>
+                        </div>
+                        <p class="menu-item-desc">Miso glaze, crispy rice, seasonal vegetables.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" data-category="desserts">
+                <div class="menu-category-header">
+                    <h3>Desserts</h3>
+                    <p>Sweet finales with a cosmic twist.</p>
+                </div>
+                <div class="menu-category-image">
+                    <img src="img/desert.PNG" alt="Desserts at Nebula & Knife">
+                </div>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Dark Matter Chocolate Sphere</span>
+                            <span class="menu-item-price">$14</span>
+                        </div>
+                        <p class="menu-item-desc">Glossy chocolate shell with a berry core, opened with warm sauce.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Zero-G Cheesecake</span>
+                            <span class="menu-item-price">$12</span>
+                        </div>
+                        <p class="menu-item-desc">Light vanilla cheesecake with citrus swirl and a crunchy base.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" data-category="drinks">
+                <div class="menu-category-header">
+                    <h3>Drinks</h3>
+                    <p>Refreshing sips and bold brews.</p>
+                </div>
+                <div class="menu-category-images">
+                    <img src="img/drink1.PNG" alt="Drinks at Nebula & Knife">
+                    <img src="img/drink2.PNG" alt="Drinks at Nebula & Knife">
+                </div>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Starlight Spritz</span>
+                            <span class="menu-item-price">$9</span>
+                        </div>
+                        <p class="menu-item-desc">Sparkling citrus, rosemary, and a subtle color-shift effect.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">The Red Planet</span>
+                            <span class="menu-item-price">$9</span>
+                        </div>
+                        <p class="menu-item-desc">Strawberry-lime mocktail with a smoky finish.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Gravity Well Espresso</span>
+                            <span class="menu-item-price">$6</span>
+                        </div>
+                        <p class="menu-item-desc">Bold espresso with vanilla and sea salt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Nebula Knife</div>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p class="footer-copy">&copy; 2026 Nebula Knife. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

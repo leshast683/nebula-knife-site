@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Nebula Knife</title>
+    <meta name="description" content="Get in touch with Nebula Knife. Make a reservation or send us a message.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Nebula Knife</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header page-header--banner" style="--banner-img: url('public/images/contact-banner.jpg')">
+            <h1>Contact</h1>
+            <p>Plan your visit to Nebula & Knife.</p>
+        </div>
+
+        <section class="contact-details-section">
+            <h2>Contact Details</h2>
+            <div class="contact-details-grid">
+                <div class="contact-item">
+                    <h3>Address</h3>
+                    <p>88 Orion Ave<br>Orlando, FL 32801</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p>(407) 555-0199</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1b7874756f7a786f5b757e796e777a7075727d7e35787476">[email&#160;protected]</a></p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Hours</h3>
+                    <p>Mon–Thu: 5pm–10pm<br>Fri–Sat: 5pm–12am<br>Sun: 5pm–9pm</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send a Message</h2>
+            <p>Questions, reservations, or feedback — we'd love to hear from you.</p>
+            <div class="contact-form-layout">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name"
+                                   placeholder="Your full name"
+                                   autocomplete="name"
+                                   aria-describedby="name-error">
+                            <span class="field-error" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email"
+                                   placeholder="your@email.com"
+                                   autocomplete="email"
+                                   aria-describedby="email-error">
+                            <span class="field-error" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"
+                                      placeholder="How can we help?"
+                                      aria-describedby="message-error"></textarea>
+                            <span class="field-error" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+
+                    <!-- Fix 2: aria-live="polite" so screen readers announce the success message -->
+                    <div class="form-success" id="form-success" hidden>
+                        <div class="form-success-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </div>
+                        <h3>Message Received</h3>
+                        <p>We'll get back to you within 24 hours. See you at the table.</p>
+                        <button type="button" class="btn btn-outline btn-small" id="form-reset-btn">
+                            Send Another Message
+                        </button>
+                    </div>
+                </div>
+                <div class="contact-form-image">
+                    <img src="img/contact.PNG" alt="Contact Nebula & Knife">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Nebula Knife</div>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p class="footer-copy">&copy; 2026 Nebula Knife. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
